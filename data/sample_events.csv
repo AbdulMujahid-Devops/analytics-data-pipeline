@@ -1,0 +1,6 @@
+event_id,service,status,duration_ms,event_date
+1,api,success,120,2026-08-01
+2,api,success,180,2026-08-01
+3,worker,failed,920,2026-08-01
+4,api,success,140,2026-08-02
+5,worker,success,300,2026-08-02
