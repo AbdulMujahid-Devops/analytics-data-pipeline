@@ -1,12 +1,36 @@
 # Analytics Data Pipeline
 
-An analytics engineering portfolio project showing a testable Python + SQL ETL pipeline. It ingests operational records, validates them, transforms them into analytics-ready tables, and produces KPI queries.
+> **About:** Python and SQL analytics engineering pipeline for data ingestion, validation, transformation, KPI generation, and analytics-ready reporting. The project connects data engineering practices with operational DevOps use cases.
 
-## Pipeline
+## What this project demonstrates
+
+The pipeline takes raw operational records through a controlled sequence of ingestion, validation, transformation, and analytical modeling. Each stage has a clear responsibility so failures can be identified, tested, and improved independently.
+
+### Pipeline flow
 
 ```text
-CSV/Source → Python ingestion → Data quality → SQL transform → Analytics marts
+Raw Source / CSV
+      ↓
+Python Ingestion
+      ↓
+Data Validation & Quality Checks
+      ↓
+Transformation
+      ↓
+SQL Analytics Models
+      ↓
+KPI / Reporting Layer
 ```
+
+### Key capabilities
+- Python-based ingestion and transformation
+- SQL schema and analytical marts
+- Data-quality validation
+- Testable pipeline stages
+- Operational KPI generation
+- Error-rate and processing-duration analysis
+- GitHub Actions validation
+- Clear separation of ingestion, transformation, and analytics
 
 ## Structure
 
@@ -29,10 +53,12 @@ python src/transform.py
 
 ## KPIs
 
-- daily event volume
-- successful vs failed events
-- average processing duration
-- error rate
-- top services by activity
+- Daily event volume
+- Successful vs failed events
+- Average processing duration
+- Error rate
+- Top services by activity
 
-The design separates ingestion, transformation, validation, and analytical SQL so each stage can be tested and operated independently.
+## DevOps connection
+
+Operational analytics can help engineering teams understand service health, failure patterns, processing performance, and workload behavior. This project therefore demonstrates the intersection of **analytics engineering, automation, data quality, and DevOps observability**.
